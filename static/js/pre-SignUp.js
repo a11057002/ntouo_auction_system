@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCF_Q4YD_W7FWb40pDU-NHW0ooYsnJWDUM",
-    authDomain: "auction-system-73960.firebaseapp.com",
-    databaseURL: "https://auction-system-73960.firebaseio.com",
-    projectId: "auction-system-73960",
-    storageBucket: "auction-system-73960.appspot.com",
-    messagingSenderId: "650872511305",
-    appId: "1:650872511305:web:8afe3f2f1c33b4f6"
+    apiKey: "AIzaSyDwPLlfenlIkNJKLEns7lUmifpu-OUEOkU",
+    authDomain: "auction22.firebaseapp.com",
+    databaseURL: "https://auction22.firebaseio.com",
+    projectId: "auction22",
+    storageBucket: "auction22.appspot.com",
+    messagingSenderId: "1091192002199",
+    appId: "1:1091192002199:web:99d5b03b52b2a008"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -38,7 +38,7 @@ function checkData() {
     isWrong += checkPassword(pass);
     isWrong += checkPassword2(pass, pass2);
     if (isWrong > 0) {
-        window.alert("資料有誤 請檢察");
+        window.alert("資料有誤 請檢查");
     }
     else {
         //todo 進行帳號註冊

@@ -61,7 +61,9 @@ def _checkUserInfoCompleteness(idToken):
     return False
 
 def _imageSaveAndUpload(filename, image, idToken):
-    path = '../.tmp/'
+    path = '.tmp/'
+    from os import listdir
+    print(listdir())
     with open(os.path.join(path, filename), 'wb+') as file:
         for chunk in image.chunks():
             file.write(chunk)

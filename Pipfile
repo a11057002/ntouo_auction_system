@@ -6,11 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "*"
-django-crontab = "*"
 pyrebase = "*"
-firebase-admin = "*"
+django-crontab = "*"
 gunicorn = "*"
+django = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.7"

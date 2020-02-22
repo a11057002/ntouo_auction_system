@@ -6,11 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pyrebase = "*"
-django-crontab = "*"
-gunicorn = "*"
-django = "*"
-django-heroku = "*"
+firebase-admin = "*"
 
 [requires]
 python_version = "3.7"

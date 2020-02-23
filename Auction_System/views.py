@@ -3,7 +3,7 @@ import sys
 import enum
 import django
 import datetime
-import pyrebase
+# import pyrebase
 from django.http import JsonResponse
 from django.shortcuts import render, redirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -19,9 +19,9 @@ config = {
     "appId": "1:1091192002199:web:99d5b03b52b2a008"
 }
 
-firebase = pyrebase.initialize_app(config)
-auth = firebase.auth()
-storage = firebase.storage()
+# firebase = pyrebase.initialize_app(config)
+# auth = firebase.auth()
+# storage = firebase.storage()
 
 class ProductStatus(enum.IntEnum):
     Removed = -1

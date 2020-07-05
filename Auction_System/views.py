@@ -485,7 +485,7 @@ def getUserName(request):
 
 @csrf_exempt
 def getCategory(request):
-    category = ['3C', '家具', '運動', '服飾', '娛樂', '精品', '交通工具', '生活用品', '食品', '書籍', '鞋子', '音樂', '電玩', '動漫', '其他']
+    category = ['3C', '家具', '運動', '服飾', '娛樂', '精品', '交通', '生活', '食品', '書籍', '鞋子', '音樂', '電玩', '動漫', '其他']
     return HttpResponse(','.join(category))
 
 @csrf_exempt

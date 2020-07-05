@@ -62,6 +62,7 @@ function GetProducts(index) {
 
   //逐一填入商品
   $("#row").html("<div id='blank1' class='col-md-12'></div><div class='col-md-1'></div>");
+
   for (var i = ((index - 1) * 20); i < ((index - 1) * 20 + numOfProduct); i++) {
     if (product_count == 5) {
       $("#row").append("<div class='col-md-1'></div><div class='col-md-1'></div>");

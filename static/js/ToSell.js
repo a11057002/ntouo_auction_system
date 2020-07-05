@@ -117,7 +117,7 @@ function checkForm(){
         }
     }
     // 檢查上傳檔案格式
-    var accept = [".gif",".jpeg",".jpg",".png"];
+    var accept = [".gif",".jpeg",".jpg",".png",".JPG"];
     var update = document.getElementById("imgIn").value;
     update = update.substring(update.lastIndexOf('.'));
     if (accept.indexOf(update) < 0) {

@@ -1,12 +1,10 @@
-.row
-{
+.row{
   height:0px;
   /* max-width: 100%; */
   margin: auto;
 }
 
-.row div[class=col-md-2],.row div[id=history_square]
-{
+.row div[class=col-md-2],.row div[id=history_square]{
   background-color: rgba(0,0,0,0.1);
   width: 100%;
   border: 5px solid white;
@@ -14,19 +12,23 @@
   border-radius: 20px;
 }
 
-.row div[class=col-md-2]:hover,.row div[id=history_square]:hover
-{
+.row div[class=col-md-2]:hover,.row div[id=history_square]:hover{
   background-color: rgba(0,0,0,0.5);
+  transform: scale(1.1);
+  transition: all 0.2s ease;
   cursor:pointer;
 }
 
-.row div p
-{
+.row div p{
   position: absolute;   /*手機版關掉*/
   bottom: -10px;
   right: 0;
   width: 100%;
   border-top: 1px solid #000;
+}
+
+.lowz{
+  z-index:-1 !important;
 }
 
 .data{
@@ -39,9 +41,12 @@
 
 .img{
   margin-top: 20px;
-  max-height: 130px;
-  margin-bottom: 30px;
+  max-height: 150px;
+  max-width:100px;
+  margin-bottom:50px;
+  transition: all 0.2s ease-in-out;
 }
+
 
 .page{
   position: fixed;
@@ -50,21 +55,21 @@
   text-align: center;
 }
 
-.nav
-{
+.nav{
   position: fixed;
   z-index:2;
   top:11%;
 }
 
-.nav ul
-{
-  border-top:2px solid rgba(0,0,0,0.5);
+.nav span{
+  text-align:center;
+}
+
+.nav ul{
   margin-top: 20px;
 }
 
-ul span
-{
+ul span{
   border-bottom: 2px solid rgba(0,0,0,0.5);
   font-weight:bold;
   margin-right: 2px;
@@ -72,57 +77,45 @@ ul span
   margin-bottom: 10px;
 }
 
-#blank1, #blank2
-{
+#blank1, #blank2{
   z-index: -1;
 }
 
-.fa-trash,.fa-dumpster
-{
+.fa-trash,.fa-dumpster{
   color: red;
 }
-.fa-trash:hover,.fa-dumpster:hover
-{
+.fa-trash:hover,.fa-dumpster:hover{
   color: blue;
 }
-.fa-trash
-{
+.fa-trash{
   margin-top:80px;
   float: right;
   font-size: 25px;
 }
 @media screen and (max-width:1040px)
 {
-  #myNavbar
-  {
+  #myNavbar {
     display:none;
   }
+
   body{
     height: 0;
   }
   form{
     top:15%;
   }
-  .row div[class=col-md-2]
-  {
-    z-index: -1;
-  }
 
-  .nav span
-  {
+  .nav span {
     display: none;
   }
-  input[type=button] , input[type = text]
-  {
+  input[type=button] , input[type = text] {
     float:right;
     margin-right:10px;
   }
-  #loadspace
-  {
+  #loadspace  {
     top:15%;
   }
-  .data
-  {
+  .data  {
     position: absolute;
     top:15%;
   }
@@ -130,12 +123,10 @@ ul span
 
 @media screen and (max-width:768px)
 {
-` .img
-  {
-    margin-bottom: 10px;
-  }`
-  .row div p
-  {
-    position: relative;
-  }
+.img{
+  margin-bottom: 10px;
+}
+.row div p{
+  position: relative;
+}
 }

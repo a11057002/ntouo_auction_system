@@ -1,1 +1,1 @@
-web: gunicorn ntouo-auction.wsgi
+web: gunicorn Auction_System.wsgi
